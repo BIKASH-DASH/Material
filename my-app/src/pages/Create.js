@@ -1,8 +1,9 @@
 import React from 'react'
-import {Typography} from '@material-ui/core'
+import {Typography,Button,ButtonGroup,Container} from '@material-ui/core'
 export default function Create() {
     return (
-        <div>
+        <Container>
+
             <Typography variant="h6" component="h2" gutterBottom="" color='textSecondary' >Create Page</Typography>
             <Typography 
             color="secondary"
@@ -10,6 +11,10 @@ export default function Create() {
             >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat molestias odit, ipsum minima ea explicabo quas voluptatum libero quod, beatae cum hic dolore enim maxime consequatur. Aliquam non est pariatur.
             </Typography>
-        </div>
+            <ButtonGroup variant="contained" color="secondary">
+                <Button type="submit"  >Button</Button>
+                <Button type="submit"   >Button</Button>
+            </ButtonGroup>
+        </Container>
     )
 }
