@@ -8,6 +8,7 @@ import {
 
 import About from './pages/About'
 import Home from './pages/Home'
+import Create from './pages/Create'
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/users">Users</Link>
+              <Link to="/Create">Create</Link>
             </li>
           </ul>
         </nav>
@@ -34,7 +35,7 @@ function App() {
           <Route component={About} exact path="/about">
           
           </Route>
-          <Route path="/users">
+          <Route component={Create} exact path="/create">
             
           </Route>
           <Route component={Home} exact path="/">
